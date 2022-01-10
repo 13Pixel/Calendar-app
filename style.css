@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+.container{
+    display: flex;
+}
+.create-delete {
+    flex:1;
+}
+.calendar {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+
+#calendar h2 {
+    line-height: 170px;
+    margin: 0;
+    font-weight: 300;
+    color: #fff;
+    background: #60c84f;
+    text-align: center;
+}
+#calendar table {
+    width: 100%;
+    margin-top: -82px;
+    border-collapse: collapse;
+}
+#calendar .week-days {
+    color: #fff;
+}
+#calendar .day {
+    width: 70px;
+    height: 80px;
+    text-align: center;
+}
+#calendar .week .day {
+    background: #eee;
+}
+#calendar .week .day:not(.other-month):hover {
+    color: #fff;
+    background: #60c84f;
+}
+#calendar .other-month {
+    opacity: 0.5;
+}
+
+p {
+    text-align: center;
+}
+
+#day-event:hover {
+    background: darkgrey;
+}
+
+.meeting {
+    background: #60c84f;
+}
+.call{
+    background: burlywood;
+}
+.outOfOffice {
+    background: cadetblue;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+    }
+}
+
+input[type=text], input[type=textarea], input[type=date], input[type=time], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit], button:hover {
+    background-color: #45a049;
+}
+
+div#create-delete {
+    padding: 30px;
+}
+
+dl {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid #333;
+    border-width: 1px 1px 0 0;
+}
+dt {
+    flex-basis: 40%;
+    padding: 2px 4px;
+    background: #333;
+    text-align: right;
+    color: #fff;
+}
+dd {
+    flex-basis: 30%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 2px 4px;
+    border-bottom: 1px solid #333;
+}
